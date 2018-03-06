@@ -23,6 +23,13 @@ namespace WpfK1
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(" You clicked  the button.");
         }
     }
 }
